@@ -1,5 +1,15 @@
-import React from 'react';
-import SingnIn from './SignIn'
+import React, { useState } from 'react';
+import Main from './Main';
+import SignIn from './SignIn';
+import config from '../config.json';
+
 export default () => {
-  return <div>Hello, React!</div>;
+  const [name, setName] = useState('');
+  console.log({ name },'name');
+
+  if(config.signInEnabled && name === '') {
+    return <SignIn setName={setName} />;
+  } else {
+    return <Main name={name} />;
+  }
 };

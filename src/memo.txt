@@ -1,0 +1,20 @@
+//教材では@7.23.0
+npm install firebase@7.23.0
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBCHsH-MJoDsMi9MPtk-grZoxaTLshWmZw",
+  authDomain: "chat-test-c7a11.firebaseapp.com",
+  projectId: "chat-test-c7a11",
+  storageBucket: "chat-test-c7a11.appspot.com",
+  messagingSenderId: "840720548955",
+  appId: "1:840720548955:web:dee527f79d71f9931fab7e"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
